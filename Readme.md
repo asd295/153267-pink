@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Золотухина](https://up.htmlacademy.ru/adaptive/10/user/153267).
-* Наставник: `Неизвестно`.
+* Наставник: `Максим Сальников`.
 
 ---
 
