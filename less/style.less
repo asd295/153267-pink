@@ -1,34 +1,23 @@
-/* 
- **********
- * MIXINS *
- **********
- */
-@import "mixins/fonts.less"; // примеси для шрифтов
-@import "mixins/adaptive.less"; // брекпоинты для адаптива
-@import "mixins/images.less"; // пути для картинок и примеси для спрайтов
+body {
+  margin: 0;
+  min-width: 320px;
+  font-size: 14px;
+  font-family: "Open Sans",Arial,sans-serif;
+  font-style: normal;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  }
 
+.page {
+	margin: 0 auto;
+    min-width: 320px;
+    max-width: 1200px;
+    width: 320px;
+}
 
-
-
-/* 
- **********
- * LAYOUT *
- **********
- */
-
-
-
-
-/* 
- *********
- * PAGES *
- *********
- */
-
-
-
-/* 
- **********
- * SYSTEM *
- **********
- */
+@import "layout/header.less";
+@import "layout/content.less";
+@import "layout/footer.less";
