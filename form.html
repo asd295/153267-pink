@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
 	<title>Pink - конкурс на самое безбашенное путешествие с Pink</title>
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="page">
@@ -26,21 +26,99 @@
 		</header>
 
 		<main class="page__content">
-			
+			<div class="section">
+				<div class="section__inner">
+					<div class="page-title">
+						<h1 class="page-title__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+					</div>
+				</div>
+			</div>
+			<div class="section form-section">
+				<div class="section__inner form-section__inner">
+					<div class="page-form__description">
+						<p class="page-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+						</p>
+					<form class="form" action="/echo" method="post">
+						<section class="form-section form-section--white">
+							<div class="form__item">
+								<label for="surname">Фамилия:</label>
+								<input type="text" id="surname" name="surname"
+								placeholder="Укажите фамилию ⃰" required="">
+								</div>
+							<div class="form__item">
+								<label for="name">Имя:</label>
+								<input type="text" id="name" name="name"
+								placeholder="Введите ваше имя ⃰" required="">
+								</div>
+							<div class="form__item">
+								<label  for="second-name">Отчество:</label>
+								<input type="text" id="second-name" name="second-name" placeholder="Ну и отчество тоже">
+							</div>
+						</section>
+						<section class="form-section form-section--gray">
+							<legend class="form__title">
+								Ваши безбашенные достижения в путешествии
+							</legend>
+								<input type="checkbox" name="shark" id="shark" checked>
+								<label for="shark">Сделал селфи с акулой</label>
+
+								<input type="checkbox" name="beach" id="beach" checked>
+								<label for="beach">Обгорел на пляже</label>
+
+								<input type="checkbox" name="norris" id="norris">
+								<label for="norris">Видел Чака Норриса</label>
+
+								<input type="checkbox" name="souvenir" id="souvenir">
+								<label for="souvenir">Накупил сувениров</label>
+
+								<input type="checkbox" name="tower" id="tower" checked>
+								<label for="tower">Удержал башню</label>
+
+								<input type="checkbox" name="hotel" id="hotel">
+								<label for="hotel">Разгромил отель</label>
+						</section>
+						<section class="form-section form-section--white">
+							<section class="form__item">
+								<label for="phone">Номер телефона</label>
+								<input class="type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+								<label for="email"><span>Адресок почты</span> Адрес почты</span></label>
+								<input class="type="email" id="email" name="email" placeholder="Введите почту ⃰" required="">
+							</section>
+						<section class="form-section form-section--gray">
+							<legend class="form__title">С каким приложением путешествовали</legend>
+
+							<input type="radio" name="travel-platform" id="iOS" value="Pink для iOS" checked>
+							<label for="iOS">Pink для iOS</label>
+							
+							<input  type="radio" name="travel-platform" id="iOS" value="Pink для iOS" checked>
+							<label for="Android">Pink на Android</label>
+							
+							<input type="radio" name="travel-platform" id="windows" value="Windows Phone">
+							<label class=for="windows"> Windows Phone</label>
+							</section>
+							
+							<section class="form-section form-section--white form-section__emotions">
+								<legend>Опишите свои эмоции</legend>
+								<textarea rows="6" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+								<div class="form-footer">
+								<button type="submit">Отправить форму</button>
+								<span> Обязательные для заполнения поля<span>
+								</div>
+								</section>
+					</form>
+					</div>
+				</div>
+			</div>
 		</main>
-
-
 		<footer class="page__footer">
 			<div class="section  footer-section">
 				<div class="section__inner  footer-section__inner">
 					<a href="index.html" class="footer-logo">Pink</a>
-
 					<div class="footer-social">
 						<a href="#" class="social-link  social-link--tw">Мы в твиттере</a>
 						<a href="#" class="social-link  social-link--fb">Мы на фейсбуке</a>
 						<a href="#" class="social-link  social-link--yt">Ютюб канал</a>
 					</div>
-
 					<a href="http://htmlacademy.ru" class="htmlacademy">Разработано</a>
 				</div>
 			</div>
