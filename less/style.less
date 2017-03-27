@@ -1,11 +1,22 @@
+/* mixins*/
+@import "mixins/mixins.less";
+@import "mixins/adaptive.less";
+
+
+
+/* fonts*/
+@import "layout/fonts/fonts.less";
+
+
 
 /* external*/
 
 @import "layout/external/normalize.less";
 
 /* grid*/
-
+@import "layout/grid/page.less";
 @import "layout/grid/section.less";
+
 
 /* header*/
 
@@ -13,13 +24,14 @@
 @import "layout/header/header-logo.less";
 @import "layout/header/header-section.less";
 
-/* fonts*/
 
-@import "layout/fonts/fonts.less";
+/* content */
+@import "layout/content/page-title.less";
+@import "layout/content/page-prolog-section.less";
 
-/* mixins*/
 
-@import "mixins/mixins.less";
+
+
 
 
 /* uikit */
@@ -34,3 +46,7 @@
 
 
 
+/*PAGES*/
+/*photo*/
+@import "less/pages/photo/photo-list-section.less";
+@import "less/pages/photo/photo-item.less";

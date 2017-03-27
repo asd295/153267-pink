@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
-	<link href='https ://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<title>Pink - фотографии пользователей</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,7 +13,7 @@
 				<div class="section__inner  header-section__inner">
 					<a class="header-logo" href="index.html">Pink</a>
 					<nav class="main-nav">
-						<div class="main-nav__burger"></div>
+						<div class="main-nav__burger  main-nav__burger--cross"></div>
 						<ul class="main-nav__list">
 							<li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="index.html">Главная</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
@@ -28,15 +27,15 @@
 		</header>
 
 		<main class="page__content">
-			<div class="section">
-				<div class="section__inner">
+			<div class="section  page-title-section">
+				<div class="section__inner  page-title-section__inner">
 					<div class="page-title">
 						<h1 class="page-title__heading">Фотографии пользователей</h1>
 					</div>
 				</div>
 			</div>
-			<div class="section">
-				<div class="section__inner">
+			<div class="section  page-prolog-section">
+				<div class="section__inner  page-prolog-section__inner">
 					<div>
 						<p class="features-item__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 					</div>
@@ -45,7 +44,13 @@
 			<div class="section  photo-list-section">
 				<div class="section__inner  photo-list-section__inner">
 					<article class="photo-item  photo-item--top">
-						<picture class="photo-item__img  photo-item__img--top">картинка</picture>
+						<picture class="photo-item__img  photo-item__img--top">
+							<picture class="photo-item__img">
+								<source media="(min-width: 990px)" srcset="img/panorama-desktop@1x.jpg">
+								<source media="(min-width: 690px)" srcset="img/panorama-tablet@1x.jpg">
+								<img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x img/panorama-mobile@2x.jpg 2x" alt="photo">
+							</picture>
+						</picture>
 						<div class="photo-item__description">
 							<div class="photo-item__name">Анна</div>
 							<div class="photo-item__time">(5 минут назад)</div>
@@ -58,8 +63,55 @@
 							</div>
 						</div>
 					</article>
+
+
 					<article class="photo-item">
-						<picture class="photo-item__img">картинка</picture>
+						<picture class="photo-item__img">
+							<source media="(min-width: 990px)" srcset="img/photo-1-desktop@1x.jpg">
+							<source media="(min-width: 690px)" srcset="img/photo-1-tablet@1x.jpg">
+							<img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@1x.jpg 1x img/photo-1-mobile@2x.jpg 2x" alt="photo">
+						</picture>
+						<div class="photo-item__description">
+							<div class="photo-item__name">Левон</div>
+							<div class="photo-item__time">(5 часов назад)</div>
+							<div class="photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+							<div class="photo-item__foter">
+								<div class="likes">
+									<button class="likes__button likes__button--active">like</button>
+									<span class="likes__scores likes__button--active">нравится:356</span>
+								</div>
+							</div>
+						</div>
+					</article>
+
+
+
+					<article class="photo-item">
+						<picture class="photo-item__img">
+							<source media="(min-width: 990px)" srcset="img/photo-2-desktop@1x.jpg">
+							<source media="(min-width: 690px)" srcset="img/photo-2-tablet@1x.jpg">
+							<img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@1x.jpg 1x img/photo-2-mobile@2x.jpg 2x" alt="photo">
+						</picture>
+						<div class="photo-item__description">
+							<div class="photo-item__name">Левон</div>
+							<div class="photo-item__time">(5 часов назад)</div>
+							<div class="photo-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+							<div class="photo-item__foter">
+								<div class="likes">
+									<button class="likes__button likes__button--active">like</button>
+									<span class="likes__scores likes__button--active">нравится:356</span>
+								</div>
+							</div>
+						</div>
+					</article>
+
+
+					<article class="photo-item">
+						<picture class="photo-item__img">
+							<source media="(min-width: 990px)" srcset="img/photo-3-desktop@1x.jpg">
+							<source media="(min-width: 690px)" srcset="img/photo-3-tablet@1x.jpg">
+							<img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@1x.jpg 1x img/photo-3-mobile@2x.jpg 2x" alt="photo">
+						</picture>
 						<div class="photo-item__description">
 							<div class="photo-item__name">Левон</div>
 							<div class="photo-item__time">(5 часов назад)</div>
